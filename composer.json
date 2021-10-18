@@ -1,0 +1,32 @@
+{
+    "name": "emresari89/laravel-mongodb-cache",
+    "description": "A MongoDB cache driver for Laravel",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+        "jenssegers/mongodb": "*",
+        "illuminate/cache": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emre Sarıoğlu",
+            "email": "emresarioglu89@gmail.com"
+        },{
+            "name": "Rahim Komaç",
+            "email": "rahimkomac@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Emresar\\Mongodb\\Cache\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Emresar\\Mongodb\\Cache\\MongoCacheServiceProvider"
+            ]
+        }
+    }
+}
